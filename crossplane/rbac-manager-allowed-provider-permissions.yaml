@@ -1,0 +1,15 @@
+---
+# Source: crossplane/templates/rbac-manager-allowed-provider-permissions.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: crossplane:allowed-provider-permissions
+  labels:
+    app: crossplane
+    chart: crossplane-1.1.0
+    release: RELEASE-NAME
+    heritage: Helm
+aggregationRule:
+  clusterRoleSelectors:
+  - matchLabels:
+      rbac.crossplane.io/aggregate-to-allowed-provider-permissions: "true"
