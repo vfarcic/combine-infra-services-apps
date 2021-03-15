@@ -1,4 +1,4 @@
-apiVersion: database.example.org/v1alpha1
+apiVersion: database.gcp.crossplane.io/v1beta1
 kind: CloudSQLInstance
 metadata:
   name: devops-toolkit
@@ -7,4 +7,4 @@ spec:
   forProvider:
     region: us-east1
     settings:
-      db-n1-standard-1
+      tier: db-n1-standard-1
