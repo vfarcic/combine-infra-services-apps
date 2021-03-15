@@ -12,7 +12,7 @@ spec:
     repoURL: https://github.com/vfarcic/combine-infra-services-apps
     targetRevision: HEAD
   destination:
-    server: https://kubernetes.default.svc
+    server: https://35.237.203.111
   syncPolicy:
     automated:
       selfHeal: true
