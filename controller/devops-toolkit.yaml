@@ -13,7 +13,7 @@ spec:
     targetRevision: HEAD
   destination:
     namespace: production
-    server: gke
+    server: https://35.237.203.111
   syncPolicy:
     automated:
       selfHeal: true
