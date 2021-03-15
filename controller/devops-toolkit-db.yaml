@@ -8,12 +8,12 @@ metadata:
 spec:
   project: production
   source:
-    path: devops-toolkit/app
+    path: devops-toolkit/db
     repoURL: https://github.com/vfarcic/combine-infra-services-apps
     targetRevision: HEAD
   destination:
     namespace: production
-    server: https://35.237.203.111
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       selfHeal: true
