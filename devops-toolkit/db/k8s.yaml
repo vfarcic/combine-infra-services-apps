@@ -1,13 +1,10 @@
 apiVersion: database.example.org/v1alpha1
-kind: PostgreSQLInstance
+kind: CloudSQLInstance
 metadata:
   name: devops-toolkit
   namespace: production
 spec:
-  parameters:
-    storageGB: 20
-  compositionSelector:
-    matchLabels:
-      provider: gcp
-  writeConnectionSecretToRef:
-    name: db-conn
+  forProvider:
+    region: us-east1
+    settings:
+      db-n1-standard-1
