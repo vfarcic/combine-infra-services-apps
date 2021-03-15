@@ -8,8 +8,10 @@ metadata:
 spec:
   project: production
   source:
-    path: crossplane
-    repoURL: https://github.com/vfarcic/combine-infra-services-apps
+    # path: crossplane
+    # repoURL: https://github.com/vfarcic/combine-infra-services-apps
+    chart: crossplane
+    repoURL: https://charts.crossplane.io/stable
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
