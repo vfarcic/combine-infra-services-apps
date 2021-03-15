@@ -12,6 +12,7 @@ spec:
     repoURL: https://github.com/vfarcic/combine-infra-services-apps
     targetRevision: HEAD
   destination:
+    namespace: production
     server: https://35.237.203.111
   syncPolicy:
     automated:
